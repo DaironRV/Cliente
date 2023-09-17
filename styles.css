@@ -38,7 +38,7 @@ body{
 }
 
 .icons img {
-    width: 120px;
+    width: 100px;
 }
 
 .product-content {
@@ -68,6 +68,8 @@ body{
 .product-img{
     flex-basis: 50%;
     text-align: right;
+    margin-left: 50px;
+    margin-top: -30px ;
 }
 
 .product-img img {
@@ -208,7 +210,7 @@ body{
     transform: scale(1.2);
   }
   
-  .card .bottom .bottom-bottom .button {
+  .card .bottom .bottom-bottom .button-cont {
     background: white;
     color: #D36424;
     border: none;
@@ -218,7 +220,7 @@ body{
     box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
   }
   
-  .card .bottom .bottom-bottom .button:hover {
+  .card .bottom .bottom-bottom button-cont:hover {
     background: #EEBB10;
     color: white;
   }
@@ -275,4 +277,53 @@ body{
 }
 .contenedor{
     margin-top: 20px;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: transparent;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  transform: scaleY(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #ffb900 10.8%,
+    rgb(214, 99, 5) 94.3%
+  );
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:active {
+  scale: 0.9;
+}
+
+.conten-button{
+  margin-top: 170px;
 }
