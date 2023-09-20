@@ -332,16 +332,16 @@ body{
   position: relative;
 }
 .product-img::before{
-  content: ""; /* Necesario para que el pseudo-elemento se muestre */
-  position: absolute; /* Posiciona el pseudo-elemento en relación con el contenedor */
+  content: ""; 
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(145, 0, 0, 0.5); /* Color de fondo negro con 50% de opacidad */
-  transform: scaleY(1); /* Inicia la veladura cubriendo todo el contenedor */
-  transform-origin: top; /* La transformación se realiza desde la parte superior del contenedor */
-  transition: transform 0.5s ease; /* Transición suave de la transformación */
+  background-color: rgba(145, 0, 0, 0.5); 
+  transform: scaleY(1); 
+  transform-origin: top; 
+  transition: transform 0.5s ease; 
   border-radius: 5px;
 }
 .product-img:hover::before{
@@ -350,4 +350,17 @@ body{
 .product-img img{
   width: 200px;
   height: auto;
+}
+
+.img-s{
+  width: 500px;
+  height:50px;
+}
+
+@media(max-width:991px){
+
+  .about-me p{
+    font-size: 6px;
+    margin-bottom: 25px;
+  }
 }
