@@ -21,9 +21,10 @@ body{
     width: 300px;
     height: 500px;
     background-color: #741B31;
-    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
     padding: 40px;
     text-align: center;
+    border-radius: 12px;
 }
 .icons {
     display: flex;
